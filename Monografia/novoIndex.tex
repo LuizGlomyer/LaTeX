@@ -1,0 +1,63 @@
+% Template para Proposta e TCC da EST/UEA -
+% Padrão para os cursos do Núcleo de Computação
+%
+% Elaborado por Elloá B. Guedes
+% Adaptado da versão elaborada por:				%                   Jucimar Maia Jr.
+%
+% Versão beta - 08 de outubro de 2015
+%
+\documentclass[a4paper,titlepage,12pt]{report}
+
+
+\input{config}
+\pagestyle{plain}
+\input{./source/folhaRosto}
+
+
+
+%% Preencha aqui os seguintes dados
+\def \titulo{Sistema de auditoria baseado em Blockchain para o aplicativo do Restaurante Universitário da UEA}
+\def \orientador{Profa. MSc. Cristina Souza de Araújo}
+\def \coorientador{Prof. Dr. Jucimar M. da Silva Junior}
+
+\def \nome{Luiz Carlos Glomyer Pereira Gomes Junior}
+\def \mes{Março}
+\def \ano{2023}
+
+\begin{document}
+
+\folhaRosto{\titulo}{\nome}{\orientador}{\mes}{\ano}{\coorientador}
+
+% Edite os seguintes arquivos para alterar as informações necessárias
+\input{./source/fichaCatalografica}
+\input{./source/folhaAprovacao}
+
+
+% Indique onde esta o arquivo do resumo
+\resumo{./files/resumo.tex}
+% Idem para o abstract
+\abstractt{./files/abstract.tex}
+ \input{./files/AGRADECIMENTOS.tex}
+
+
+\sumario
+
+% Configuração de cabeçalhos
+\input{./source/inicioCapitulos}
+
+
+% Seus capítulos vão aqui --------
+\input{./files/CAP1.tex}
+\input{./files/CAP2.tex}
+\input{./files/CAP3.tex}
+\input{./files/CAP4.tex}
+
+
+
+% Referência segundo o padrão ABNT
+% Edite este arquivo e inclua suas referências segundo a notação do Bibtex
+\bibliography{ref}
+
+
+
+\end{document}
